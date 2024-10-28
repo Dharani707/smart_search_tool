@@ -1,26 +1,13 @@
-
 import streamlit as st
 import requests
 import os
 from bs4 import BeautifulSoup
-# import pandas as pd
-import numpy as np
-import torch
 from llama_index.core import Document, VectorStoreIndex
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.llms.huggingface import HuggingFaceLLM
-from llama_index.llms.huggingface_api import HuggingFaceInferenceAPI
-# from llama_index.core.prompts.prompts import SimpleInputPrompt
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_index.embeddings.langchain import LangchainEmbedding
 from llama_index.core import Settings
-# from ctransformers import AutoModelForCausalLM
-from langchain.llms import CTransformers
-from llama_index.llms.langchain import LangChainLLM
 from llama_index.core.retrievers import VectorIndexRetriever 
 from llama_index.core.query_engine import RetrieverQueryEngine
-# from llama_index.core.postprocessor import SimilarityPostprocessor
-# from llama_index.core.response.pprint_utils import pprint_response 
 from llama_index.core import StorageContext, load_index_from_storage
 
 from kaggle_secrets import UserSecretsClient
@@ -28,7 +15,6 @@ user_secrets = UserSecretsClient()
 HF_TOKEN = user_secrets.get_secret("HF_TOKEN")
 HUGGINGFACEHUB_API_KEY = user_secrets.get_secret("HUGGINGFACEHUB_API_KEY")
 LANGCHAIN_API_KEY = user_secrets.get_secret("LANGCHAIN_API_KEY")
-
 
 
 def scraping():
@@ -115,5 +101,6 @@ if st.button('Scrape and Search'):
         st.write("For more details visit Analytics Vidhya website")
     else:
         st.write("Please enter a query in the text box.")
+  
   
 
