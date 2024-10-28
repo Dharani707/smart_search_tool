@@ -65,7 +65,7 @@ def vector_index(documents):
                                             show_progress=True)
     return index
 
-PERSIST_DIR = "/kaggle/input/vector-storage/storage"
+PERSIST_DIR = "vector_storage/storage"
 
 def session_state():
     
