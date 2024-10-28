@@ -10,12 +10,6 @@ from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core import StorageContext, load_index_from_storage
 
-# from kaggle_secrets import UserSecretsClient
-# user_secrets = UserSecretsClient()
-# HF_TOKEN = user_secrets.get_secret("HF_TOKEN")
-# HUGGINGFACEHUB_API_KEY = user_secrets.get_secret("HUGGINGFACEHUB_API_KEY")
-# LANGCHAIN_API_KEY = user_secrets.get_secret("LANGCHAIN_API_KEY")
-
 
 def scraping():
     page_no = 1
