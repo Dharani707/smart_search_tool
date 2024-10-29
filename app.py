@@ -84,7 +84,7 @@ def handle_query(index,query):
 
 
 input_text = st.text_input("Enter your requirements of skills to be developed or the course which you are interested")
-
+st.caption("eg: can you list out courses related to Generative AI")
 st.title("Analytics Vidhya's Smart search system")
 st.write("This app will gives the informations of free courses related to AI/ML, Data Science, and Analytics from Analytics Vidhya")
 if st.button('Scrape and Search'):
