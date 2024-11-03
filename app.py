@@ -90,7 +90,7 @@ st.write("This app will gives the informations of free courses related to AI/ML,
 if st.button('Scrape and Search'):
     index = session_state()
     if input_text:
-        st.write("This is only showing the top 6 similarity Free courses from Analytics Vidhya and to see more similar Free courses & paid courses please visit Analytics Vidhya website")
+        st.write("Here are the top 6 free courses from Analytics Vidhya. To explore more free and paid courses, please visit the Analytics Vidhya website")
         handle_query(index, input_text)
         st.write("For more details visit Analytics Vidhya website")
     else:
