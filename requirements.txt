@@ -1,6 +1,5 @@
 sentence-transformers
 llama-index
-langchain
 langchain-community
 huggingface_hub
 llama-index-embeddings-langchain
